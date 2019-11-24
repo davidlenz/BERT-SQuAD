@@ -6,7 +6,7 @@ from bert import QA
 app = Flask(__name__)
 CORS(app)
 
-model = QA("model")
+model = QA("bert-large-cased-whole-word-masking-finetuned-squad")
 
 @app.route("/predict",methods=['POST'])
 def predict():
